@@ -9,7 +9,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "homepage": "./"
+    "homepage": "https://jianingroja.github.io/react-todo-161"
   },
   "scripts": {
     "start": "react-scripts start",
