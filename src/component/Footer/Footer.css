@@ -1,0 +1,40 @@
+.footer {
+  padding: 0px;
+  margin: 10px 0px 15px;
+  display: flex;
+}
+
+.filters {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.button-footer {
+  margin-right: 20px;
+  padding: 2.5px 7px 3px;
+  border: 1px solid #f4ecec;
+  border-radius: 5px;
+  background-color: pink;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  flex-grow: 0;
+  cursor: pointer;
+}
+
+.filtered {
+  margin-right: 20px;
+  padding: 2.5px 7px 3px;
+  border: 1px solid #a10b0bd7;
+  border-radius: 5px;
+  background-color: pink;
+  color: #860707;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  flex-grow: 0;
+  cursor: pointer;
+}
