@@ -5,13 +5,18 @@ class Footer extends React.Component {
   constructor(props) {
     super(props);
     this.props = props;
-    this.state = { condition: "All" };
-    // this.filterTasks = this.filterTasks.bind(this);
+    this.state = { condition: "Default" };
+    //this.filterTasks = this.filterTasks.bind(this); 用不了，可能会body.current有关
   }
 
   filterTasks(condition) {
-    this.props.filterTasks(condition);
-    this.setState({ condition: condition });
+    if (this.state.condition === condition) {
+      this.props.filterTasks("Default");
+      this.setState({ condition: "Default" });
+    } else {
+      this.props.filterTasks(condition);
+      this.setState({ condition: condition });
+    }
   }
 
   render() {
@@ -19,7 +24,9 @@ class Footer extends React.Component {
       <div className="footer">
         <button
           className={
-            this.state.condition === "All" ? "filtered" : "button-footer"
+            this.state.condition === "All"
+              ? "filtered default"
+              : "button-footer"
           }
           onClick={(e) => this.filterTasks("All", e)}
         >

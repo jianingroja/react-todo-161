@@ -44,8 +44,9 @@ class Todo extends React.Component {
   render() {
     return (
       <li
-        className={this.props.id % 2 === 0 ? null : "even"}
-        //className={this.state.isChecked ? "completed" : null}
+        className={`${this.props.id % 2 === 0 ? null : "even"} ${
+          this.state.isChecked ? "completed" : null
+        }`}
       >
         <input
           type="checkbox"

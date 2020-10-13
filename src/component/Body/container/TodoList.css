@@ -11,10 +11,13 @@ ol li {
 }
 
 .even .input-text {
-  background: #f4ecec;
+  background: transparent;
 }
-.even .completed {
-  background-color: #d4b3b3ad;
+
+.input-text.completed {
+  background-color: transparent;
+  text-decoration: line-through;
+  color: #a80b0bb0;
 }
 
 .checkbox {
@@ -31,8 +34,6 @@ ol li {
 }
 
 .completed {
-  color: #a80b0bb0;
-  text-decoration: line-through;
   background-color: #d4b3b3ad;
 }
 

@@ -78,6 +78,11 @@ class Body extends React.Component {
         });
         break;
       case "All":
+        this.setState({
+          filteredTasks: this.state.tasks,
+        });
+        break;
+      case "Default":
       default:
         this.setState({
           filteredTasks: this.state.tasks,
